@@ -1,5 +1,3 @@
-require 'sinatra/base'
-
 class TextSend < Sinatra::Base
 
 	configure do
