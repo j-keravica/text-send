@@ -1,8 +1,8 @@
-require "./sinatra/sendhelpers"
+require "./lib/sendhelpers"
 
 class TextSend < Sinatra::Base
   
-  helpers Sinatra::SendHelpers
+  include SendHelpers
 
   post '/send' do
     puts params[:word] + " " + params[:color]

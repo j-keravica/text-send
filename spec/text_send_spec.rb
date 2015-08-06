@@ -9,7 +9,7 @@ RSpec.describe TextSend do
   end
 
   describe "POST /send" do
-    it "sends words and colors"
+    it "forwards the parameters to pusher"
   end
 
 end
