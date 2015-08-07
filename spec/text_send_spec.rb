@@ -10,7 +10,7 @@ RSpec.describe TextSend do
 
   describe "POST /send" do
     it "forwards the parameters to pusher" do
-      post "/send", { :word => "word", :color => "#{}000000" }
+      post "/send", { :word => "word", :color => "#000000" }
       expect(last_response.status).to eq 200
     end
   end
