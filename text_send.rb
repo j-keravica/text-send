@@ -1,4 +1,4 @@
-require "./lib/sendhelpers"
+require "./lib/send_helpers"
 
 class TextSend < Sinatra::Base
   
