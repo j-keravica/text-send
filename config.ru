@@ -1,8 +1,5 @@
-require 'rubygems'
-require 'bundler'
+require "./environment.rb"
 
-Bundler.require
+$stdout.sync = true
 
-require './text-send'
-
-run TextSend
+run Rack::URLMap.new("/" => TextSend)
