@@ -19,6 +19,9 @@
 
 require "rack/test"
 require "./environment.rb"
+require "pusher-fake/support/rspec"
+
+PusherFake.configuration.verbose = true
 
 RSpec.configure do |config|
 
